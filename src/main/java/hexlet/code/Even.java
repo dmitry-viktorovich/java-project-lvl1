@@ -13,8 +13,9 @@ public class Even {
     public static void getUserChoice() {
         System.out.println("Answer 'yes' if number even otherwise answer 'no'.");
         int count = 0;
+        final int rounds = 3;
         String correctAnswer;
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < rounds; i++) {
             int randomNumber = getRandomNumber();
             System.out.println("Question: " + randomNumber);
             Scanner sc = new Scanner(System.in);
@@ -43,7 +44,7 @@ public class Even {
                     + "!");
                 break;
             }
-            if (count == 3) {
+            if (count == rounds) {
                 System.out.println("Congratulations, "
                     + Cli.getUserName()
                     + "!");
