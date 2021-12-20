@@ -10,30 +10,30 @@ public class Even {
         return randomNumber;
     }
 
-    public static void getUserChoice() {
+    public static void runEvenGame() {
         System.out.println("Answer 'yes' if number even otherwise answer 'no'.");
-        int count = 0;
+        int countCorrectAnswer = 0;
         final int rounds = 3;
         String correctAnswer;
         for (int i = 0; i < rounds; i++) {
-            int randomNumber = getRandomNumber();
-            System.out.println("Question: " + randomNumber);
+            int questionNumber = getRandomNumber();
+            System.out.println("Question: " + questionNumber);
             Scanner sc = new Scanner(System.in);
             System.out.print("Your answer: ");
-            String userChoice = sc.nextLine();
+            String userAnswer = sc.nextLine();
 
-            if (randomNumber % 2 == 0) {
+            if (questionNumber % 2 == 0) {
                 correctAnswer = "yes";
             } else {
                 correctAnswer = "no";
             }
 
-            if (userChoice.equals(correctAnswer)) {
-                count++;
+            if (userAnswer.equals(correctAnswer)) {
+                countCorrectAnswer++;
                 System.out.println("Correct!");
             } else {
                 System.out.println("'"
-                    + userChoice
+                    + userAnswer
                     + "'"
                     + " is wrong answer ;(. Correct answer was "
                     + "'"
@@ -44,7 +44,7 @@ public class Even {
                     + "!");
                 break;
             }
-            if (count == rounds) {
+            if (countCorrectAnswer == rounds) {
                 System.out.println("Congratulations, "
                     + Cli.getUserName()
                     + "!");

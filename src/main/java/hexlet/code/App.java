@@ -11,17 +11,17 @@ public class App {
 
         Scanner sc = new Scanner(System.in);
         System.out.print("Your choice: ");
-        int userChoice = sc.nextInt();
+        int gameNumber = sc.nextInt();
 
-        if (userChoice == 1) {
+        if (gameNumber == 1) {
             System.out.println("\nWelcome to the Brain Games!");
             Cli.greetingUser();
         }
 
-        if (userChoice == 2) {
+        if (gameNumber == 2) {
             System.out.println("\nWelcome to the Brain Games!");
             Cli.greetingUser();
-            Even.getUserChoice();
+            Even.runEvenGame();
         }
     }
 }
