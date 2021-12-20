@@ -5,8 +5,9 @@ import java.util.Scanner;
 
 public class Even {
     public static int getRandomNumber() {
+        final int maxRandomNumber = 100;
         Random random = new Random();
-        int randomNumber = random.nextInt();
+        int randomNumber = random.nextInt(maxRandomNumber);
         return randomNumber;
     }
 
