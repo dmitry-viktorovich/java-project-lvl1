@@ -16,7 +16,7 @@ public class Even {
         }
     }
 
-    public static String getCorrectAmswer() {
+    public static String getCorrectAnswer() {
         return correctAnswer;
     }
 
