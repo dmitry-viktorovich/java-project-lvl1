@@ -54,6 +54,7 @@ public class Engine {
             for (int i = 0; i < rounds; i++) {
                 Calc.getRandomOperation();
                 correctAnswer = "" + Calc.getResult();
+                System.out.println("Question: " + Calc.getX() + Calc.getOperation() + Calc.getY());
                 Scanner sc = new Scanner(System.in);
                 System.out.print("Your answer: ");
                 String userAnswer = sc.next();
