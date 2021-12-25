@@ -21,7 +21,7 @@ public class Engine {
             System.out.println("Answer 'yes' if number even otherwise answer 'no'.");
             for (int i = 0; i < rounds; i++) {
                 Even.even();
-                correctAnswer = "" + Even.getCorrectAmswer();
+                correctAnswer = "" + Even.getCorrectAnswer();
                 System.out.println("Question: " + Even.getRandomDigit());
                 Scanner sc = new Scanner(System.in);
                 System.out.print("Your answer: ");
