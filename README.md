@@ -11,3 +11,9 @@ Demonstrating "Calc game"
 
 Demonstrating "GCD game"
 <a href="https://asciinema.org/a/458772" target="_blank"><img src="https://asciinema.org/a/458772.svg" /></a>
+
+Demonstrating "Progression game"
+<a href="https://asciinema.org/a/459073" target="_blank"><img src="https://asciinema.org/a/459073.svg" /></a>
+
+Demonstrating "Prime game"
+<a href="https://asciinema.org/a/459076" target="_blank"><img src="https://asciinema.org/a/459076.svg" /></a>
