@@ -31,8 +31,8 @@ public class Calc {
         }
     }
 
-    public static int getResult() {
-        return result;
+    public static String getResult() {
+        return Integer.toString(result);
     }
 
     public static int getX() {
